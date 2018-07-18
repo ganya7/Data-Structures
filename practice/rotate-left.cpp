@@ -13,7 +13,6 @@ int main(){
 	for(int i =0; i < size;i++){
 		cin>>a[i];
 	}
-	int temp=0;
 	int *b = new int[size];
 	shift = shift % size;
 	for(int i =0; i < size;i++){

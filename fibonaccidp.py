@@ -1,7 +1,8 @@
+#memoization: top-down approach dp
 def fibonacci(n,lookup):
-	if n==0 or n==1:
+	if n<= 1:
 		lookup[n] = n
-	if lookup[n] is None:
+	if lookup[n] is None:#if term not calculated then calculate
 		lookup[n] = fibonacci(n-1,lookup) + fibonacci(n-2,lookup);
 	return lookup[n]
 
